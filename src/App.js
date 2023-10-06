@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import UseState from "./components/UseState";
 import UseEffect from "./components/UseEffect";
+import UseContext from "./components/UseContext";
 
 function App() {
   return (
@@ -11,12 +12,14 @@ function App() {
           <button><Link to="/">Home</Link></button> | &nbsp;
           <button><Link to="/UseState">useState Hook</Link></button> | &nbsp;
           <button><Link to="/UseEffect">useEffect Hook</Link></button> | &nbsp;
+          <button><Link to="/UseContext">UseContext Hook</Link></button> | &nbsp;
           
           <br />
         </div>
         <Routes>
           <Route path="/UseState" element={<UseState />} />
           <Route path="/UseEffect" element={<UseEffect />} />
+          <Route path="/UseContext" element={<UseContext />} />
         </Routes>
       </BrowserRouter>
     </div>
