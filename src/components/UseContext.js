@@ -1,5 +1,5 @@
 import React from "react"
-import ComponentA from "../forContext_Hook/componentA";
+import ComponentA from "../useContext_components/componentA";
 
 const UseContext = () => {
   return (
