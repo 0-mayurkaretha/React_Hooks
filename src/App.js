@@ -6,6 +6,7 @@ import UseContext from "./components/UseContext";
 import UseReducer from "./components/UseReducer";
 import UseCallback from "./components/UseCallback";
 import UseMemo from "./components/UseMemo";
+import UseRef from "./components/UseRef";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <button><Link to="/UseReducer">UseReducer Hook</Link></button> | &nbsp;
           <button><Link to="/UseCallback">UseCallback Hook</Link></button> | &nbsp;
           <button><Link to="/UseMemo">UseMemo Hook</Link></button> | &nbsp;
+          <button><Link to="/UseRef">UseRef Hook</Link></button> | &nbsp;
           
           <br />
         </div>
@@ -30,6 +32,7 @@ function App() {
           <Route path="/UseReducer" element={<UseReducer />} />
           <Route path="/UseCallback" element={<UseCallback />} />
           <Route path="/UseMemo" element={<UseMemo />} />
+          <Route path="/UseRef" element={<UseRef />} />
         </Routes>
       </BrowserRouter>
     </div>
