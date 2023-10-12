@@ -9,6 +9,7 @@ import UseMemo from "./components/UseMemo";
 import UseRef from "./components/UseRef";
 import Custom_useDocumentTitle from "./components/Custom_useDocumentTitle";
 import Custom_useCounter from "./components/Custom_useCounter";
+import Custom_useInput from "./components/Custom_useInput";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <button><Link to="/UseRef">UseRef Hook</Link></button> | &nbsp;
           <button><Link to="/Custom_useDocumentTitle">custom UseDocumentTitle</Link></button> | &nbsp;
           <button><Link to="/Custom_useCounter">custom UseCounter</Link></button> | &nbsp;
+          <button><Link to="/Custom_useInput">custom useInput</Link></button> 
           
           <br />
         </div>
@@ -39,6 +41,7 @@ function App() {
           <Route path="/UseRef" element={<UseRef />} />
           <Route path="/Custom_useDocumentTitle" element={<Custom_useDocumentTitle />} />
           <Route path="/Custom_useCounter" element={<Custom_useCounter />} />
+          <Route path="/Custom_useInput" element={<Custom_useInput />} />
         </Routes>
       </BrowserRouter>
     </div>
